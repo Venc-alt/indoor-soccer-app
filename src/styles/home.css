@@ -1,16 +1,17 @@
 /* General page styles */
 .home-container {
   margin: 0 auto;
-  max-width: 1200px;
-  padding-top: 50px; /* Add some top padding */
-}
-
-.home-content {
-  text-align: left;
+  max-width: 600px; /* Match with Teams component */
   padding: 2rem;
+  text-align: center; /* Center text for consistency */
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-content h1 {
+  font-size: 28px; /* Match with Teams heading size */
+  color: #333;
 }
 
 /* Typography */
@@ -29,8 +30,9 @@
 /* Image styling */
 img {
   max-width: 100%; /* Ensure responsiveness */
-  border-radius: 8px; /* Add a slight border radius */
-  margin-top: 20px; /* Space between image and content on smaller screens */
+  border-radius: 8px;
+  margin-top: 20px; /* Space between image and content */
+  margin-bottom: 15px;
 }
 
 /* Button styles */

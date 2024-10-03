@@ -24,16 +24,11 @@ import '../styles/home.css';
 
 const Home = () => {
   return (
-    <div className="container home-container"> {/* Bootstrap container */}
-      <div className="row align-items-center"> {/* Align vertically */}
-        <div className="col-md-6 order-md-1"> {/* 50% width on medium screens and above */}
-          <h1>Welcome to Indoor Soccer</h1>
-          <p>Join us for exciting matches and fun indoor soccer games with local teams.</p>
-        </div>
-        <div className="col-md-6 order-md-2"> {/* 50% width on medium screens and above */}
-          <img src={soccerImage} alt="Indoor Soccer" className="img-fluid" /> {/* Responsive image */}
-        </div>
-      </div>
+    <div className="home-container"> {/* Centered and consistent width */}
+      <h1>Welcome to Indoor Soccer</h1>
+      <p>Join us for exciting matches and fun indoor soccer games with local teams.</p>
+      <img src={soccerImage} alt="Indoor Soccer" className="img-fluid" /> {/* Responsive image */}
+      <button className="cta-btn">Schedule a Game</button>
     </div>
   );
 }
