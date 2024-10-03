@@ -11,3 +11,46 @@ section {
   html, body {
     background-color: #D8D1C3 !important;
   }
+
+  /* Mobile (up to 600px) */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar-links {
+    flex-direction: column;
+    text-align: center;
+  }
+  section {
+    padding: 50px 10px;
+  }
+}
+
+/* Tablet (600px to 900px) */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  body {
+    font-size: 16px;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  section {
+    padding: 70px 30px;
+  }
+}
+
+/* Desktop (900px and up) */
+@media only screen and (min-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+  .navbar {
+    justify-content: flex-start;
+  }
+  section {
+    padding: 100px 50px;
+  }
+}
