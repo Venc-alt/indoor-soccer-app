@@ -1,0 +1,13 @@
+section {
+  padding: 10px 0; /* Adds space inside each section */
+  margin-bottom: 10px; /* Adds space between sections */
+  margin-top: 70px;
+}
+
+#home, #contact, #schedule, #teams {
+  min-height: 100vh; /* Ensures that each section takes up the full viewport height */
+}
+
+  html, body {
+    background-color: #D8D1C3 !important;
+  }

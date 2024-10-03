@@ -1,0 +1,45 @@
+/* General page styles */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.home-content {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  max-width: 600px; /* Restrict width for better readability */
+}
+
+/* Typography */
+.home-content h1 {
+  font-size: 36px; /* Larger for main heading */
+  color: #333; /* Dark text color */
+  margin-bottom: 1.5rem; /* Spacing below the heading */
+}
+
+.home-content p {
+  font-size: 18px; /* Medium size for text */
+  color: #555; /* Slightly lighter text color */
+  margin-bottom: 2rem;
+}
+
+/* Button styles */
+.cta-btn {
+  background-color: #547B5B; /* Vibrant blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #8E8476; /* Darker blue on hover */
+}
