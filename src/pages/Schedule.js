@@ -8,33 +8,42 @@ const Schedule = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Game scheduled for:', date, time);
-    // Handle game scheduling logic here
   };
 
   return (
-    <div className="schedule-container">
-      <h2>Schedule a Game</h2>
-      <form className="schedule-form" onSubmit={handleSubmit}>
-        <label htmlFor="date">Select Date:</label>
-        <input 
-          type="date" 
-          id="date" 
-          value={date} 
-          onChange={(e) => setDate(e.target.value)} 
-          required 
-        />
+    <div className="schedule-container"> {/* Bootstrap container */}
+      <div className="row justify-content-center"> {/* Center content */}
+        <div className="col-md-8"> {/* Center the form with a max width */}
+          <h2>Schedule a Game</h2>
+          <form className="schedule-form" onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label htmlFor="date">Select Date:</label>
+              <input 
+                type="date" 
+                id="date" 
+                value={date} 
+                className="form-control" 
+                onChange={(e) => setDate(e.target.value)} 
+                required 
+              />
+            </div>
 
-        <label htmlFor="time">Select Time:</label>
-        <input 
-          type="time" 
-          id="time" 
-          value={time} 
-          onChange={(e) => setTime(e.target.value)} 
-          required 
-        />
+            <div className="form-group">
+              <label htmlFor="time">Select Time:</label>
+              <input 
+                type="time" 
+                id="time" 
+                value={time} 
+                className="form-control" 
+                onChange={(e) => setTime(e.target.value)} 
+                required 
+              />
+            </div>
 
-        <button type="submit" className="btn-schedule">Confirm</button>
-      </form>
+            <button type="submit" className="btn-primary btn-schedule">Confirm</button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };

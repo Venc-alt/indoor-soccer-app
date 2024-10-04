@@ -2,16 +2,14 @@ import React, { useState } from 'react';
 import '../styles/contact.css';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Implement form submission (EmailJS or API integration)
+    console.log('Message submitted:', { name, email, message });
+    // Handle form submission logic here (e.g., sending data to backend)
   };
 
   return (
@@ -22,9 +20,8 @@ const Contact = () => {
         <input
           type="text"
           id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
           required
         />
 
@@ -32,23 +29,20 @@ const Contact = () => {
         <input
           type="email"
           id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           required
         />
 
         <label htmlFor="message">Message:</label>
         <textarea
           id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          rows="5"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           required
         />
 
-        <button type="submit" className="btn-submit">Send Message</button>
+        <button type="submit" className="btn-contact">Send</button>
       </form>
     </div>
   );
