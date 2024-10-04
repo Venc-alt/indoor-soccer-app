@@ -1,15 +1,27 @@
-.footer {
-    background-color: #fff;
-    color: #110808;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .footer p {
-    margin: 0;
-    font-size: 14px;
-  }
-  
+
+   /* src/styles/footer.css */
+.footer-container {
+  background-color: #547B5B;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.footer-links {
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

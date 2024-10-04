@@ -8,6 +8,7 @@ import Footer from './pages/Footer';  // Import the Footer component
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
 import './index.css';
 
+
 function App() {
   return (
     <Router>

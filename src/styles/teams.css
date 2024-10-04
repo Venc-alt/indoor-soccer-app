@@ -48,31 +48,16 @@
   background-color: #8E8476;
 }
 
-/* Base styles are already applied above */
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .teams-container {
-    padding: 1rem;
-  }
-
-  .team-list li {
-    flex-direction: column; /* Stack content vertically on smaller screens */
-  }
-
-  .btn-join {
-    font-size: 14px;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-  }
+/* Modal adjustments */
+.modal-header {
+  background-color: #547B5B;
+  color: white;
 }
 
-@media (max-width: 480px) {
-  .teams-container h2 {
-    font-size: 22px;
-  }
+.modal-body {
+  font-size: 16px;
+}
 
-  .btn-join {
-    width: 100%; /* Full-width button on smaller screens */
-  }
+.modal-footer .btn-primary {
+  background-color: #547B5B;
 }
