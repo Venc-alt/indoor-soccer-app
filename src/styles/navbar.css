@@ -9,33 +9,13 @@ div > section{
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
-.navbar-brand {
-  color: #fff; /* White text for the brand */
-  font-weight: bold;
-  font-size: 24px;
-}
-
 .navbar-nav .nav-item .nav-link {
   color: #fff; /* White text for links */
-  font-size: 18px;
   padding: 0.5rem 1rem;
   transition: color 0.3s ease; /* Smooth hover transition */
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: #8E8476; /* Change color on hover */
+  color: #ec7152; /* Change color on hover */
 }
 
-.navbar-toggler {
-  border-color: #fff; /* White border for the toggler button */
-}
-
-.navbar-toggler-icon {
-  background-color: #fff; /* White icon for the toggler */
-}
-
-/* Responsive spacing for the sections to ensure navbar doesn't overlap content */
-div > section {
-  padding-top: 75px;
-  margin-top: 5rem;
-}
